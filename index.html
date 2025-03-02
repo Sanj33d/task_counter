@@ -22,7 +22,7 @@
 
      </style>
 </head>
-<body class="px-[140px] pt-6 text-clr bg-slate-400">
+<body id="body" class="px-[140px] pt-6 text-clr bg-[#F4F7FF]">
     <header>
         <nav class="flex justify-between">
             <!-- nav-left -->
@@ -31,12 +31,14 @@
                 <h1 class="text-4xl">Dev<span class="font-bold">Board</span></h1>
             </div>
             <!-- nav right -->
-             <div class="flex gap-9">
+             <div class="flex items-center gap-9">
                 <div class="flex gap-2 items-center">
                     <img src="images/checkbox.png" alt="">
                     <p id="task-completed" class="text-3xl font-bold">23</p>
                 </div>
-                <img src="images/theme-btn.png" alt="">
+                <button id="btn-theme" class="cursor-pointer">
+                    <img src="images/theme-btn.png" alt="">
+                </button>
              </div>
         </nav>
     </header>
@@ -171,7 +173,7 @@
             </div>
             <!-- task history details -->
             <div id="history-container" class="">
-                <!-- <p class="text-black mt-7 ml-2">You have Complete The Task Add Dark Mode at 12:48:15 PM</p> -->
+            
             </div>
          </div>
     </main>

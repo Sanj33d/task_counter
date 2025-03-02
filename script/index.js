@@ -1,3 +1,5 @@
+// index.js
+
 // task assigned decrementing
 let arr = ["btn-amar1", "btn-amar2", "btn-amar3", "btn-amar4", "btn-amar5", "btn-amar6"]
 
@@ -24,14 +26,19 @@ for (let x of arr) {
 
         let new_elem = document.createElement("p")
         new_elem.innerText = `
-        You have Complete The Task Add Dark Mode at`
+        You have Complete The Task Add Dark Mode at `
+        new_elem.classList.add("bg-[#F4F7FF]","mt-6","mb-7", "rounded-lg", "px-3", "py-3")
 
+        // real time display
+        let irlTime = new Date()
+        new_elem.innerText += irlTime.toLocaleTimeString()
         parent_elem.appendChild(new_elem)
-
-
-
 
     }
 })
 }
-// 
+// press theme button to change background
+document.getElementById("btn-theme")
+.addEventListener("click", function(){
+    colorGenerator()
+})
