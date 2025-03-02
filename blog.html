@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+    <!-- daisyui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- tailwind custom style script parinai -->
+     <style>
+        * {
+        font-family: "Poppins", sans-serif;
+        }
+        .text-clr{
+            color: #00303C;
+        }
+
+     </style>
+</head> 
+<body class="px-[140px] pt-2 text-clr min-h-screen bg-[#F4F7FF]">
+    <header class="mt-4 p-4 text-clr bg-white rounded-2xl shadow-md">
+        <nav class="flex justify-between items-center">
+            <!-- nav-left -->
+            <div class="flex items-center gap-2">
+                <img src="images/logo.png" alt="">
+                <h1 class="text-4xl">Dev<span class="font-bold">Board</span></h1>
+            </div>
+            <!-- nav right -->
+             <button id="btn-desk" class="btn bg-[#3752FD] text-white rounded-lg">Back to Desk</button>
+        </nav>
+    </header>
+    <!-- blog section -->
+    <section>
+        <h1 class="font-bold text-5xl text-center mt-6">Blogs</h1>
+
+        <!-- qna -->
+         <div class="mt-9 p-4 bg-white rounded-xl">
+            <p class="font-bold text-3xl">Question-1: What are the different ways to select an element in the DOM?</p>
+            <hr class="opacity-20 border-s border-dashed mx-[-16px] mt-4">
+            <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores dolorum rerum provident corrupti ratione voluptatem harum incidunt officiis, quisquam commodi adipisci facilis, voluptatibus error aut, nisi voluptates nihil asperiores exercitationem.</p>
+         </div>
+         <div class="mt-9 p-4 bg-white rounded-xl">
+            <p class="font-bold text-3xl">Question-2: What is the difference between innerHTML, innerText, and textContent ?</p>
+            <hr class="opacity-20 border-s border-dashed mx-[-16px] mt-4">
+            <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores dolorum rerum provident corrupti ratione voluptatem harum incidunt officiis, quisquam commodi adipisci facilis, voluptatibus error aut, nisi voluptates nihil asperiores exercitationem.</p>
+         </div>
+         <div class="mt-9 p-4 bg-white rounded-xl">
+            <p class="font-bold text-3xl">Question-3: What is event delegation in the DOM?
+
+            </p>
+            <hr class="opacity-20 border-s border-dashed mx-[-16px] mt-4">
+            <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores dolorum rerum provident corrupti ratione voluptatem harum incidunt officiis, quisquam commodi adipisci facilis, voluptatibus error aut, nisi voluptates nihil asperiores exercitationem.</p>
+         </div>
+         <div class="mt-9 p-4 bg-white rounded-xl">
+            <p class="font-bold text-3xl">Question-4: What is event bubbling in the DOM?</p>
+            <hr class="opacity-20 border-s border-dashed mx-[-16px] mt-4">
+            <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores dolorum rerum provident corrupti ratione voluptatem harum incidunt officiis, quisquam commodi adipisci facilis, voluptatibus error aut, nisi voluptates nihil asperiores exercitationem.</p>
+         </div>
+         <div class="mt-9 p-4 bg-white rounded-xl">
+            <p class="font-bold text-3xl">Question-5: How do you create, add, and remove elements using JavaScript?</p>
+            <hr class="opacity-20 border-s border-dashed mx-[-16px] mt-4">
+            <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores dolorum rerum provident corrupti ratione voluptatem harum incidunt officiis, quisquam commodi adipisci facilis, voluptatibus error aut, nisi voluptates nihil asperiores exercitationem.</p>
+         </div>
+    </section>
+    <script src="script/blog.js"></script>
+</body>
+</html>

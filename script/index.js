@@ -53,3 +53,9 @@ document.getElementById("btn-history")
 .addEventListener("click", function(){
     clearHistory()
 })
+
+// click banner mid div to go to blog.html
+const bannerMid = document.getElementById("banner-mid")
+bannerMid.addEventListener("click", function(){
+    window.location.href = "blog.html"
+})
