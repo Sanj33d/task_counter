@@ -1,6 +1,3 @@
-// index.js
-
-// task assigned decrementing
 let arr = ["btn-amar1", "btn-amar2", "btn-amar3", "btn-amar4", "btn-amar5", "btn-amar6"]
 
 for (let x of arr) {
@@ -25,8 +22,16 @@ for (let x of arr) {
         let parent_elem = document.getElementById("history-container")
 
         let new_elem = document.createElement("p")
+        // getting parent element
+        let childNode = document.getElementById(x)
+        let parentNode = childNode.parentElement
+        let grandParentNode = parentNode.parentElement
+
+        let requiredParent = grandParentNode.querySelector("h3")
+        let requiredParentContent = requiredParent.innerText
+
         new_elem.innerText = `
-        You have Complete The Task Add Dark Mode at `
+        You have Complete The Task ${requiredParentContent} at `
         new_elem.classList.add("bg-[#F4F7FF]","mt-6","mb-7", "rounded-lg", "px-3", "py-3")
 
         // real time display
@@ -37,8 +42,14 @@ for (let x of arr) {
     }
 })
 }
-// press theme button to change background
+// click theme button to change background
 document.getElementById("btn-theme")
 .addEventListener("click", function(){
     colorGenerator()
+})
+
+// click clear history button to clear all history
+document.getElementById("btn-history")
+.addEventListener("click", function(){
+    clearHistory()
 })
